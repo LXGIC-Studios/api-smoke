@@ -1,0 +1,50 @@
+{
+  "name": "@lxgicstudios/api-smoke",
+  "version": "1.0.0",
+  "description": "Run smoke tests on API endpoints from a YAML config. Define endpoints, methods, expected status codes, and body assertions. Parallel execution, bail-on-failure, multi-environment support.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "api-smoke": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "api",
+    "smoke-test",
+    "testing",
+    "yaml",
+    "endpoint",
+    "automation",
+    "ci-cd",
+    "integration-test",
+    "cli",
+    "http",
+    "rest-api",
+    "quality-assurance",
+    "assertions",
+    "npx"
+  ],
+  "author": "LXGIC Studios",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lxgicstudios/api-smoke"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "files": [
+    "dist"
+  ],
+  "dependencies": {
+    "js-yaml": "^4.1.0"
+  },
+  "devDependencies": {
+    "@types/js-yaml": "^4.0.9",
+    "@types/node": "^25.2.2",
+    "typescript": "^5.9.3"
+  }
+}
